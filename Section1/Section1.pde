@@ -42,10 +42,10 @@ class Visualizer {
     for(int i = 0; i < values.length; i++){
       if(values[i] > 0){
         fill(0, 255, 0);
-        rect(x+(400/size*i), y+100-v.values[i], 400/size, v.values[i]);
+        rect(x+(400/(float)values.length*i), y+100-v.values[i], 400/(float)values.length, v.values[i]);
       } else {
         fill(255, 0, 0);
-        rect(x+(400/size*i), y+100-v.values[i], 400/size, v.values[i]);
+        rect(x+(400/(float)values.length*i), y+100-v.values[i], 400/(float)values.length, v.values[i]);
       }
     }
 
